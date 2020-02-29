@@ -1,4 +1,4 @@
-#APPLICATION ANDROID
+APPLICATION ANDROID
 
 Cette application regroupe 2 fonctionnalités: 
 - 1 convertisseur
