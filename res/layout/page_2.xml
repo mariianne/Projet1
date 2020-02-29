@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#264959"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MON CONVERTISSEUR"
+        android:textColor="#E42165"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/idEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:text="Euros"
+        android:textColor="#03A9F4"
+        app:layout_constraintEnd_toStartOf="@+id/idTxtMontant"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/idDevise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="Devise"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/idTxtMontant"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/idDevise"
+        app:layout_constraintStart_toEndOf="@+id/idEuros"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="Montant" />
+
+    <Button
+        android:id="@+id/idTaux"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="60dp"
+        android:text="Taux"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toStartOf="@+id/idAC"
+        app:layout_constraintTop_toBottomOf="@+id/idEuros" />
+
+    <Button
+        android:id="@+id/idAC"
+        android:layout_width="174dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="88dp"
+        android:text="AC"
+        android:textColor="#2196F3"
+        app:layout_constraintStart_toEndOf="@+id/idTaux"
+        app:layout_constraintTop_toBottomOf="@+id/idDevise" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="396dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idAC"
+        app:srcCompat="@drawable/monnaie" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
